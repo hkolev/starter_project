@@ -1,0 +1,237 @@
+/* ------------------------------------------------------------ *    Imports
+\* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ *	Reset
+\* ------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------ *	Helpers
+\* ------------------------------------------------------------ */
+.clearfix, .cols:after, .shell:after {
+  content: '';
+  display: table;
+  line-height: 0;
+  clear: both;
+}
+
+.col {
+  float: left;
+}
+
+.col_2of3 {
+  width: 60%;
+}
+
+.col_1of3 {
+  width: 33.33%;
+}
+
+.col_1of4 {
+  width: 25%;
+}
+
+@media only screen and (max-width: 767px) {
+  .col {
+    float: none;
+  }
+  .col_1of4 {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------------------------ *    Variables
+\* ------------------------------------------------------------ */
+/*  Colors  */
+/*  Base body  */
+/*  Links  */
+/*  Shell  */
+/* ------------------------------------------------------------ *	Sprite
+\* ------------------------------------------------------------ */
+[class^="ico-"] {
+  background-image: url(images/sprite.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ------------------------------------------------------------ *	Base
+\* ------------------------------------------------------------ */
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  min-width: 320px;
+  color: #000;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  transition: ease-in-out .3s;
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.8em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h1[class],
+h2[class],
+h3[class],
+h4[class],
+h5[class],
+h6[class],
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+ul:last-child,
+ol:last-child,
+dl:last-child,
+table:last-child,
+blockquote:last-child {
+  margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------ *	Shell
+\* ------------------------------------------------------------ */
+.shell {
+  margin: auto;
+  max-width: 940px;
+  padding: 0 15px;
+}
+
+/* ------------------------------------------------------------ *	Buttons
+\* ------------------------------------------------------------ */
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  transition: ease-in-out .3s;
+}
+
+/* ------------------------------------------------------------ *	Section
+\* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ *	Header
+\* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ *	Intro
+\* ------------------------------------------------------------ */
+.intro {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.intro .intro__image {
+  height: 700px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.intro .intro__body {
+  position: relative;
+  height: 700px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro .intro__content {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .intro {
+    font-size: 18px;
+  }
+  .intro .intro__entry {
+    padding: 0 30px;
+  }
+  .intro .intro__image {
+    height: 540px;
+  }
+  .intro .intro__body {
+    height: 540px;
+  }
+}
+
+/* ------------------------------------------------------------ *	Navigations
+\* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ *	Footer
+\* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ *	Form
+\* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ *	Form elements
+\* ------------------------------------------------------------ */
+
+/*# sourceMappingURL=.maps/style.css.map */

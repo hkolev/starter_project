@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+	Helpers
+\* ------------------------------------------------------------ */
+
+.clearfix { 
+	content: '';
+	display: table;
+	line-height: 0;
+	clear: both;
+ }
+
+
+.cols {
+	&:after{ 
+		@extend .clearfix;
+	}
+  }
+
+.col { float: left; }
+.col_2of3 { width: 60%;}
+.col_1of3 { width: 33.33%; }
+.col_1of4 { width: 25%; }
+
+
+@media only screen and (max-width: 767px) {
+	.col {
+		float: none;
+	}
+
+	.col_1of4 {
+		width: 100%;
+	}
+}

@@ -1,0 +1,49 @@
+/* ------------------------------------------------------------ *\
+	Intro
+\* ------------------------------------------------------------ */
+
+.intro {
+	position: relative;
+	text-align: center;
+	color: $white;
+	font-size: 24px;
+	font-weight: 300;
+	
+	& .intro__image{
+		height: 700px;
+		width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: absolute;
+	}
+
+	& .intro__body {
+		position: relative;
+		height: 700px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	& .intro__content {
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.intro {
+		font-size: 18px;
+ 
+		& .intro__entry {
+			padding: 0 30px;
+		}
+
+		& .intro__image{
+			height: 540px;
+		}
+
+		& .intro__body {
+			height: 540px;
+		}
+	}
+}
