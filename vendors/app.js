@@ -5,7 +5,7 @@ $( document ).ready(function() {
  	 $('.slider .slides').owlCarousel({
  	    items: 1,
  	    loop: true
-	});
+    });
 
  	//Click event for the testimonials
  	// var $slides = $('.slider .slides');

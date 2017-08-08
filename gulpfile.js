@@ -3,6 +3,16 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
+var babel = require('gulp-babel');
+
+
+gulp.task('js', () => {
+    return gulp.src('vendors/app.js')
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .pipe(gulp.dest('vendors/dist'));
+});
 
 function handleError (error) {
   console.log(error.toString())
@@ -37,8 +47,10 @@ gulp.task('sass', function() {
 })
 
 
+
 gulp.task('watch', ['browserSync', 'sass'], function(){
-  gulp.watch('scss/**/*.scss', ['sass']);
-  gulp.watch('*.html', browserSync.reload);
-  gulp.watch('vendors/**/*.js', browserSync.reload);
+  	gulp.watch('scss/**/*.scss', ['sass']);
+  	gulp.watch('*.html', browserSync.reload);
+  	gulp.watch('vendors/**/*.js', browserSync.reload);
+	gulp.watch('vendors/app.js',['js']);
 })
